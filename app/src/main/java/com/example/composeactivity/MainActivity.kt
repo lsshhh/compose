@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
@@ -33,6 +34,13 @@ setContent { CustomSwitch() }
 @Composable
 fun HelloText(message: String, fontSize: Float){
     Text(text = message,fontSize = fontSize.sp, fontWeight = FontWeight.Bold)
+}
+
+@Composable
+fun LoginButton(){
+    Button(onClick = { /*TODO*/ }) {
+        
+    }
 }
 @Composable
 fun CustomSwitch(){
