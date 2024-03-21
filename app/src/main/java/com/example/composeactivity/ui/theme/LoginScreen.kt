@@ -76,8 +76,3 @@ fun LoginScreen() {
     }
 }
 
-@Preview
-@Composable
-fun DemoTextPreview() {
-    LoginScreen()
-}

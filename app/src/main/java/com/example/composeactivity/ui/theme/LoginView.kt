@@ -12,4 +12,6 @@ class LoginView: ComponentActivity() {
             LoginScreen()
         }
     }
+
+
 }
