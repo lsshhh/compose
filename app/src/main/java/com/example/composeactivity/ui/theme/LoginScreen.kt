@@ -1,5 +1,6 @@
 package com.example.composeactivity.ui.theme
 
+import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -63,7 +64,7 @@ fun LoginScreen() {
         })
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(onClick = {}) {
+        Button(onClick = { Log.e("btn clicked", "LoginScreen:$email, // $password ", )}) {
             Text(text = "Login")
         }
         TextButton(onClick = {}) {

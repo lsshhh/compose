@@ -1,6 +1,7 @@
 package com.example.composeactivity
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
@@ -28,7 +29,6 @@ class MainActivity : ComponentActivity() {
 fun HelloText(message: String, fontSize: Float) {
     Text(text = message, fontSize = fontSize.sp, fontWeight = FontWeight.Bold)
 }
-
 @Composable
 fun LoginButton() {
     Button(onClick = { /*TODO*/ }) {
@@ -39,8 +39,9 @@ fun LoginButton() {
 @Composable
 fun CustomSwitch() {
     val checked = remember {
-        mutableStateOf(true)
+    mutableStateOf(true)
     }
+
     Column {
         Switch(checked = checked.value, onCheckedChange = { checked.value = it })
         if (checked.value) {
